@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link href="loginn.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+  <body id="LoginForm" background-image: url_for("static", filename='background.jpg');
+   background-color: #cccccc;>
+    <center>
+  <div class="container">
+  <h1 class="form-heading">Form</h1>
+  <div class="login-form">
+  <div class="main-div">
+      <div class="panel">
+     <h2>Admin Login</h2>
+     <p>Please enter your Username and password</p>
+     </div>
+      <form method="post">
+          <div class="form-group col-md-6">
+              <input type="name" name="username" class="form-control"  placeholder="Enter Username">
+          </div>
+          <div class="form-group col-md-6">
+              <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      </div>
+  <p class="botton-text"> Designed by Chirag Narang</p>
+  </div></div>
+
+  <a href="{{url_for('index')}}" > Go to HomePage  </a>
+</center>
+</body>
+</html>
